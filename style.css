@@ -1,0 +1,188 @@
+
+
+/*<<<<<<<<<<< CssFinixStart >>>>>>>>>>>>>>*/
+
+/* FontAdd */
+
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h4,h3,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+.container-fluid{
+    max-width: 1280px;
+}
+
+
+/* buttonDefolt>>>>>>>>>>>>> */
+
+.btn-primary{
+    background-color: #e83b3e !important;
+    border-color: #e83b3e;
+    padding: 8px 40px;
+    font-size: 19px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    border-radius: 7px;
+}
+.btn-primary:hover{
+    border-color: #111;
+   transition: .5s;
+}
+.btn-primary::after{
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 0%;
+height: 100%;
+background-color: #111;
+border-color: #111;
+transition: .5s;
+z-index: -1;
+border-radius: 7px;
+}
+.btn-primary:hover::after{
+    width: 100%;
+}
+/* BtnEnd<<<<<<<<<<<<< */
+
+
+/* StartMainCSS */
+
+/* TopMenuNavbar>>>>>>>>>>> */
+
+
+.our-primar-meny li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #111;
+    padding: 5px 10px ;
+    font-weight: 500;
+    transition: .3s;
+}
+.our-primar-meny li a i{
+    font-size: 19px;
+    position: relative;
+    top: 2px;
+}
+.our-primar-meny li a:hover{
+    color: #e83b3e;
+}
+
+/* DropdownMenu */
+.our-primar-meny li{
+    position: relative;
+}
+.our-primar-meny li ul{
+    position: absolute;
+    top: 140%;
+    left: 0;
+    width: 200px;
+    background:#fafafa;
+    list-style: none;
+    padding-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 5px;
+    transition: .4s ease-in-out;
+}
+.our-primar-meny li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+
+
+.our-primar-meny li ul li{
+    flex-direction: column;
+}
+.our-primar-meny li ul li a{}
+
+
+
+.header-call-info span{
+    font-size: 15px;
+}
+.header-call-info a{
+    text-decoration: none;
+    color: #111;
+    font-size: 17px;
+}
+.header-src{
+    width: 45px;
+    font-size: 23px;
+    margin-right: 19px;
+    text-align: center;
+    border-right: 1px solid #999;
+}
+.header-call {}
+.header-call-info {        
+    width: 170px;
+}
+.hader-call-icon {
+    font-size: 30px;
+    transform: rotate(-47deg);
+    color: #e83b3e;
+}
+
+/* topMenuNavbarEnd<<<<<<<<<<<<<<<<  */
+.slider-section{
+    background:url(./img/main-banner2.jpg) no-repeat center;
+    background-size: cover;
+}
+.slider-content h6{
+    color: #f84940;
+    font-size: 23px;
+
+}
+.slider-content h1{
+    font-size: 52px;
+}
+.slider-content p{
+    font-size: 20px;
+}
+.slidr-content-wrap{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-social{
+    position: absolute;
+    left: 0;
+   bottom: 0;
+}
+.header-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.header-social ul li{
+    padding: 0px 11px;
+    display: inline-block;
+}
+.header-social ul li span{
+    color: #222;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.header-social ul li span::after{
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: #999;
+    position: absolute;
+    top: 11px;
+    left: 76px;
+}
+.header-social ul li a i{
+    color: #111;
+    font-size: 20px;
+  
+}
+/* banerEnd */
+
